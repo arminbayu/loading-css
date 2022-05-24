@@ -1,0 +1,66 @@
+<style media="screen">
+  .tamsayfaloadingcss {
+    position:fixed;
+    width:80px;
+    height:80px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+  }
+  #tmsyfloadspin {
+    width:80px;
+    height:80px;
+    position:absolute;
+    margin:0 auto;
+  }
+  .tmsyfloaddoublboun2 {
+    background-color:#39B1C6
+  }
+  .tmsyfloaddoublboun1 {
+    background-color:#EC3F8C
+  }
+  .tmsyfloaddoublboun1, .tmsyfloaddoublboun2 {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    opacity:.6;
+    position:absolute;
+    top:0;
+    left:0;
+      -webkit-animation:sk-bounce 2s infinite ease-in-out;
+      animation:sk-bounce 2s infinite ease-in-out
+  }
+  .tmsyfloaddoublboun2 {
+    -webkit-animation-delay:-1s;
+    animation-delay:-1s
+  }
+  @-webkit-keyframes sk-bounce { 
+    0%, 
+    100% { 
+      -webkit-transform:scale(0)
+    }
+    50% {
+      -webkit-transform:scale(1)
+    }
+  }
+  @keyframes sk-bounce{
+    0%,
+    100% {
+      transform:scale(0);
+      -webkit-transform:scale(0)
+    }
+    50% {
+      transform:scale(1);
+      -webkit-transform:scale(1)
+    }
+  }
+</style>
+  
+<div class="tamsayfaloadingcss">
+  <div id="tmsyfloadspin">
+    <div class="tmsyfloaddoublboun1"></div>
+    <div class="tmsyfloaddoublboun2"></div>
+  </div>
+</div>
